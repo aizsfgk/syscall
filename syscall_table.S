@@ -1,18 +1,18 @@
 # 系统调用表
 ENTRY(sys_call_table)
-	.long sys_restart_syscall	# 重启系统调用      /* 0 - old "setup()" system call, used for restarting */
+	.long sys_restart_syscall   # 重启系统调用      /* 0 - old "setup()" system call, used for restarting */
 	.long sys_exit              # 退出
 	.long sys_fork              # 克隆进程
 	.long sys_read              # 读
 	.long sys_write             # 写
 
-	.long sys_open		        # 打开             // 5
-	.long sys_close             # 关闭
-	.long sys_waitpid           # 等待子进程退出
+	.long sys_open              # 打开             // 5
+	.long sys_close             # 关闭             // 6
+	.long sys_waitpid           # 等待子进程退出    // 7
 	.long sys_creat             # 创建文件
-	.long sys_link              # 链接文件
+	.long sys_link              # 创建硬链接
 
-	.long sys_unlink	        # 删除链接文件      // 10
+	.long sys_unlink            # 删除硬链接       // 10
 	.long sys_execve
 	.long sys_chdir
 	.long sys_time
