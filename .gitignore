@@ -4,3 +4,4 @@
 !*.c
 !*.sh
 !README.md
+!syscall_table.S
