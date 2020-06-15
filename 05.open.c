@@ -6,7 +6,9 @@
 #include <sys/stat.h> //S_IRWXU
 
 #include <unistd.h> // write
-
+/*
+    每个进程都有一个自己的文件描述符表
+*/
 int main(int argc, char const *argv[])
 {
 	char num[10];
@@ -20,5 +22,8 @@ int main(int argc, char const *argv[])
 			fprintf(stderr, "%s\n", "write err");
 		}
 	}
+
+
+	close(fd);
 	return 0;
 }
