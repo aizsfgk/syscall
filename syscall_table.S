@@ -13,8 +13,8 @@ ENTRY(sys_call_table)
 	.long sys_link              # 创建硬链接
 
 	.long sys_unlink            # 删除硬链接       // 10
-	.long sys_execve
-	.long sys_chdir
+	.long sys_execve            # fork出子进程后，开始执行
+	.long sys_chdirn            # chidir          // 12 改变工作目录
 	.long sys_time
 	.long sys_mknod
 	.long sys_chmod		/* 15 */
