@@ -15,17 +15,17 @@ ENTRY(sys_call_table)
 	.long sys_unlink            # 删除硬链接       // 10
 	.long sys_execve            # fork出子进程后，开始执行
 	.long sys_chdirn            # chidir          // 12 改变工作目录
-	.long sys_time
-	.long sys_mknod
-	.long sys_chmod		/* 15 */
-	.long sys_lchown16
-	.long sys_ni_syscall	/* old break syscall holder */
-	.long sys_stat
-	.long sys_lseek
-	.long sys_getpid	/* 20 */
-	.long sys_mount
-	.long sys_oldumount
-	.long sys_setuid16
+	.long sys_time              # 时间
+	.long sys_mknod             # 创建文件：普通，字符，块，FIFO，unix domain socket
+	.long sys_chmod		        # 修改文件权限 /* 15 */
+	.long sys_lchown16          # 修改文件用户和组
+	.long sys_ni_syscall	    # /* old break syscall holder */
+	.long sys_stat              # 状态
+	.long sys_lseek             #
+	.long sys_getpid	        # /* 20 */
+	.long sys_mount             # 
+	.long sys_oldumount         # 
+	.long sys_setuid16          # 
 	.long sys_getuid16
 	.long sys_stime		/* 25 */
 	.long sys_ptrace

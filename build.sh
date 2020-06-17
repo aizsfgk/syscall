@@ -9,7 +9,7 @@ function compile() {
     echo "gcc -std=c99 $FILENAME -o output/${FILENAME%.*}"
 	echo ""
 
-    gcc -std=c99 $FILENAME -o output/${FILENAME%.*}
+    gcc $FILENAME -o output/${FILENAME%.*}
 }
 
 function execute() {
