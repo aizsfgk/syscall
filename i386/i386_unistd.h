@@ -16,7 +16,7 @@
 #define __NR_creat		          8
 #define __NR_link		          9
 #define __NR_unlink		          10
-#define __NR_execve		          11
+#define __NR_execve		          11  // 执行新程序
 #define __NR_chdir		          12
 #define __NR_time		          13
 #define __NR_mknod		          14
@@ -27,10 +27,10 @@
 #define __NR_lseek		          19
 #define __NR_getpid		          20
 #define __NR_mount		          21
-#define __NR_umount		          22
-#define __NR_setuid		          23
-#define __NR_getuid		          24
-#define __NR_stime		          25
+#define __NR_umount		          22  // 卸载 fuser
+#define __NR_setuid		          23  // 设置有效用户id
+#define __NR_getuid		          24  //
+#define __NR_stime		          25  // 设置系统时间
 #define __NR_ptrace		          26
 #define __NR_alarm                27
 #define __NR_oldfstat             28
@@ -56,6 +56,7 @@
 #define __NR_signal		 48
 #define __NR_geteuid		 49
 #define __NR_getegid		 50
+
 #define __NR_acct		 51
 #define __NR_umount2		 52
 #define __NR_lock		 53
