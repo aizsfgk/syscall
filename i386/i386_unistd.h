@@ -39,7 +39,7 @@
 #define __NR_stty		 31
 #define __NR_gtty		 32
 #define __NR_access		 33
-#define __NR_nice		 34
+#define __NR_nice		 34   // 改变进程优先级
 #define __NR_ftime		 35
 #define __NR_sync		 36
 #define __NR_kill		 37
