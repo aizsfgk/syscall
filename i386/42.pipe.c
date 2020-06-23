@@ -34,6 +34,14 @@ int main(int argc, char const *argv[])
 		snprintf(buf,100, "hello-child, i am master, pid: %d, child_pid: %d", getpid(), pid);
 		write(pipefd[1], buf, strlen(buf));
 
+		int status;
+		pid_t child_pid = wait(&status);
+		
+		if (WIFEXITED(status)) {
+			fprintf(stdout, "pid: %d\n", child_pid);
+		}
+			
+		
 		
 		int flag = 1;
 		while (flag < 10) {
