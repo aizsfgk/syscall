@@ -6,7 +6,7 @@
 function compile() {
     FILENAME=$1
 
-    echo "gcc -std=c99 $FILENAME -o output/${FILENAME%.*}"
+    echo "gcc $FILENAME -o output/${FILENAME%.*}"
 	echo ""
 
     gcc $FILENAME -o output/${FILENAME%.*}
