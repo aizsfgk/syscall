@@ -68,6 +68,7 @@
 #define __NR_ulimit		          58
 #define __NR_oldolduname	      59
 #define __NR_umask		          60
+
 #define __NR_chroot		          61
 #define __NR_ustat		          62
 #define __NR_dup2		          63
