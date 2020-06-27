@@ -6,10 +6,9 @@
 function compile() {
     FILENAME=$1
 
-    echo "gcc $FILENAME -o output/${FILENAME%.*}"
-	echo ""
-
-    gcc $FILENAME -o output/${FILENAME%.*}
+    echo "gcc -Wall -g -o output/${FILENAME%.*} $FILENAME"
+	  echo ""
+    gcc -Wall -g -o output/${FILENAME%.*} $FILENAME
 }
 
 function execute() {
