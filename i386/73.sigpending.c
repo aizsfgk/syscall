@@ -74,5 +74,13 @@ int main(int argc, char const *argv[])
 
 	pause();
 	printf("end\n");
+
+
+
+	// sig_atomic_t 读写原子性变量类型
+	// 
+	// volatile sig_atomic_t g_status_var;
+
+
 	return 0;
 }
