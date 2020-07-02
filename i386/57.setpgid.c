@@ -3,6 +3,7 @@
 // setpgid, getpgid, setpgrp, getpgrp - set/get process group
 
 
+// 设置进程组id
 int main(int argc, char const *argv[])
 {
 	int  rt = setpgid(getpid(), 0);
