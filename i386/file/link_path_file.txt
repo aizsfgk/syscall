@@ -1,0 +1,1 @@
+/home/zhangshifeng/self/cpp/demo/syscall/i386/file/link_target.txt
