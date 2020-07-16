@@ -1,7 +1,7 @@
 #include "base.h"
 
-
-// 设置进程优先级
+// ioperm - set port input/output permissions
+// 
 
 
 int main(int argc, char const *argv[])
