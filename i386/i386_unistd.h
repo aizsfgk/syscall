@@ -124,7 +124,7 @@
 #define __NR_fstat		            108
 #define __NR_olduname		        109
 #define __NR_iopl		            110
-#define __NR_vhangup		        111
+#define __NR_vhangup		        111 // virtual hangup at tty
 #define __NR_idle		            112
 #define __NR_vm86old		        113
 #define __NR_wait4		            114
@@ -164,6 +164,8 @@
 #define __NR_fdatasync		        148
 #define __NR__sysctl		        149
 #define __NR_mlock		            150
+
+
 #define __NR_munlock		        151
 #define __NR_mlockall		        152
 #define __NR_munlockall		        153
@@ -266,6 +268,9 @@
 #define __NR_io_submit		        248
 #define __NR_io_cancel		        249
 #define __NR_fadvise64		        250
+
+
+
 /* 251 is available for reuse (was briefly sys_set_zone_reclaim) */
 #define __NR_exit_group		        252
 #define __NR_lookup_dcookie	        253
@@ -319,6 +324,8 @@
 #define __NR_fchownat		        298
 #define __NR_futimesat		        299
 #define __NR_fstatat64		        300
+
+
 #define __NR_unlinkat		        301
 #define __NR_renameat		        302
 #define __NR_linkat		            303
