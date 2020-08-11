@@ -34,13 +34,13 @@ function main() {
    fi
 
    echo ""
-   echo -e "\033[32m====== compile ======\033[0m"
+   echo -e "\033[32m====== compile x86_64 ======\033[0m"
    echo ""
    compile $*
    echo -e "\033[32m=====================\033[0m"
     
    echo ""
-   echo -e "\033[36m====== execute ======\033[0m"
+   echo -e "\033[36m====== execute x86_64 ======\033[0m"
    echo ""
    execute $*
    echo -e "\033[36m=====================\033[0m"
